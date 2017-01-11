@@ -9,4 +9,8 @@ class Track
 		@duration_ms = duration_ms
 	end
 
+	def summary
+		"- #{title}\n"
+	end
+
 end

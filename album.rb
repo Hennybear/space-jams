@@ -1,4 +1,4 @@
-require_relative 'track'
+  require_relative 'track'
 
 class Album
   # Define your Album class here.
@@ -26,11 +26,12 @@ class Album
   end
 
   def tracks_summary
-  	track_list = ''
-  	@tracks.each do |track|
-  		track_list << "- #{track.title}\n"
-  	end
-  	track_list
+  	# track_list = ''
+  	# @tracks.each do |track|
+  	# 	track_list << track.summary
+  	# end
+  	# track_list
+    @tracks.map { |track| track.summary }.join
   end
 
   def duration_min
